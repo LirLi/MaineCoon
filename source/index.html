@@ -219,11 +219,21 @@
           </div>
           <div class="gallery__item gallery__item--large slider__slide">
             <picture>
+              <source media="(max-width:768px)" srcset=".\img\slide_cat-gray530.png">
+              <source media="(max-width:1023px)" srcset=".\img\slide_cat-gray234.png">
               <img class="gallery__item-img gallery__item-img--large" src=".\img\slide_cat-gray530.png" alt="котята">
             </picture>
           </div>
         </div>
+        <button class="slider__button slider__button--prev" type="button" name="button">
+          <span class="visually-hidden">Предыдущий сотрудник</span>
+        </button>
+        <button class="slider__button slider__button--next" type="button" name="button">
+          <span class="visually-hidden">Следующий сотрудник</span>
+        </button>
       </div>
+
+
 
       <div class="pets__button-wrapper">
         <a class="pets__button button" href="#">Смотреть больше</a>
@@ -378,10 +388,10 @@
           </div>
         </div>
 
-      <button class="slider__button slider__button--prev" type="button" name="button">
+      <button class="slider__button slider__button--prev slider__button-team--prev" type="button" name="button">
         <span class="visually-hidden">Предыдущий сотрудник</span>
       </button>
-      <button class="slider__button slider__button--next" type="button" name="button">
+      <button class="slider__button slider__button--next slider__button-team--next" type="button" name="button">
         <span class="visually-hidden">Следующий сотрудник</span>
       </button>
     </div>
@@ -482,10 +492,10 @@
           </div>
         </div>
       </div>
-      <button class="slider__button slider__button--prev" type="button" name="button">
+      <button class="slider__button slider__button--prev slider__button-reviews--prev" type="button" name="button">
         <span class="visually-hidden">Предыдущий отзыв</span>
       </button>
-      <button class="slider__button slider__button--next" type="button" name="button">
+      <button class="slider__button slider__button--next slider__button-reviews--next" type="button" name="button">
         <span class="visually-hidden">Следующий отзыв</span>
       </button>
       </div>
