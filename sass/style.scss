@@ -24,6 +24,11 @@ $mobile-width-only:767px;
   font-style: normal;
   font-display: swap;
 }
+*,
+*::before,
+*::after {
+          box-sizing: border-box; }
+
 
 body{
   min-width: 320px;
@@ -789,10 +794,11 @@ line-height: 140%;
 
 }
 .care__item{
-  margin-righ: 40px;
+  display: flex;
+  // margin-right: 40px;
   margin-bottom: 40px;
   &:last-child{
-      margin-righ:0;
+      margin-right:0;
   }
 }
 
@@ -975,6 +981,7 @@ right: 27%;
   right: 40%;
     }
 }
+
 .team__item-wrapper{
   margin-left: -45px;
   padding: 65px 100px;
@@ -1349,12 +1356,21 @@ right: 24%
 .reviews__social-item{
     margin-right: 17px;
 }
-.reviews__link svg{
-  width: 14px;
-  height: 14px;
-  padding: 9px 7px;
-  fill:rgba(160, 123, 80, 0.94);
+.reviews__link{
+  display: block;
+ 
+  padding: 9px 9px;
   border: 1px solid rgba(160, 123, 80, 0.94);
+
+}
+.reviews__link svg{
+ 
+  
+  fill:rgba(160, 123, 80, 0.94);
+  &:hover{
+    fill:#fff;
+  }
+ 
 }
 .slider__button-reviews--prev,
 .slider__button-reviews--next{
